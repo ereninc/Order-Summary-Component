@@ -1,0 +1,139 @@
+:root {
+  /* Primary Colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral Colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* Fonts */
+  --p-size: 16px;
+  --general-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: var(--pale-blue);
+  font-family: var(--general-family);
+  font-size: var(--p-size);
+}
+
+.component {
+  background-color: var(--very-pale-blue);
+  width: 400px;
+  height: 620px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  box-shadow: 0 25px 15px 0px rgb(176, 185, 193, 0.25);
+}
+
+.component img {
+  border-radius: 16px 16px 0 0;
+}
+
+.summary-description {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.summary-description h2 {
+  opacity: 0.85;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.summary-description p {
+  width: 24ch;
+  margin-top: 24px;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  opacity: 0.45;
+}
+
+.annual-plan {
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsla(223, 23%, 46%, 0.063);
+  width: 300px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.annual-plan .icon {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.annual-plan .plan {
+  margin-top: 20px;
+}
+
+.annual-plan .plan h2 {
+  opacity: 0.85;
+  font-weight: 900;
+}
+
+.annual-plan .plan p {
+  margin-top: 8px;
+  color: var(--desaturated-blue);
+}
+
+#change {
+  margin-right: 8px;
+  color: var(--bright-blue);
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.buttons {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.buttons #proceed {
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0px rgb(41, 0, 128, 0.5);
+  height: 48px;
+  background-color: var(--bright-blue);
+  color: var(--pale-blue);
+  font-weight: 700;
+}
+
+.buttons #cancel {
+  height: 48px;
+  font-weight: 900;
+  color: var(--desaturated-blue);
+}
+
+.buttons #cancel:hover {
+  color: var(--dark-blue);
+}
+
+.buttons #proceed:hover {
+  opacity: 0.75;
+}
+
+#change:hover {
+  opacity: 0.75;
+}
